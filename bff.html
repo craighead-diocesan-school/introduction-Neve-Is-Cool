@@ -66,4 +66,32 @@
   footer {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
+  @media screen and (max-width: 1000px) {
+    body {
+      display: grid;
+      grid:
+        " h " auto
+        " n " auto
+        " m " auto
+        " f " auto
+        / auto auto;
+    }
+
+    header {
+      grid-area: h;
+    }
+
+    main {
+      grid-area: m;
+    }
+
+    footer {
+      grid-area: f;
+    }
+
+    nav {
+      grid-area: n;
+    }
+  }
 </style>
