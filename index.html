@@ -23,13 +23,8 @@
       <li>Music</li>
       <li>etc.</li>
     </ul>
-      <div class="cars">
-      <img src="Cars.jpg">
-      </div>
-      </div>
-      <div class="music">
-      <img src="Taylor Swift.jpg" />
-      </div>
+    <img src="Cars.jpg" />
+    <img src="Taylor Swift.jpg" />
   </main>
 
   <hr />
@@ -40,18 +35,11 @@
 </body>
 
 <style>
-
   header {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
   }
-  .music {
-    height: 500px;
-    width: 760px;
-  }
-
-  .cars {
+  img {
     height: 500px;
     width: 760px;
   }
@@ -81,56 +69,36 @@
   }
 
   @media screen and (max-width: 1000px) {
+    h1 {
+      text-align: center;
+      grid-area: h;
+    }
 
-h1 {
-  text-align:center;
-  grid-area: h;
-}
+    nav {
+      grid-area: n;
+    }
 
+    footer {
+      grid-area: f;
+    }
 
-nav {
-  grid-area: n;
-}
+    img {
+      height: 500px;
+      width: 760px;
+    }
 
-footer {
-  grid-area: f;
-}
+    main {
+      grid-area: m;
+    }
 
-
-
-img {
-    height: 500px;
-    width: 760px;
+    body {
+      display: grid;
+      grid:
+        " h " auto
+        " n " auto
+        " m " auto
+        " f " auto
+        / auto auto;
+    }
   }
-
-
-main {
-  grid-area: m;
-}
-
- body {
-  display: grid;
-        grid:
-          " h " auto
-          " n " auto
-          " m " auto
-          " t " auto
-          " c " auto
-          " f " auto
-          / auto auto;
-
-  }
-
-  .music {
-    grid-area: t
-  }
-
-  .cars {
-    grid-area: c
-  }
-
-  }
-
-
-
 </style>
